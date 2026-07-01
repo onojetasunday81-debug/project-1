@@ -8,9 +8,9 @@
 
 /*the navbar*/
 .navbar{
-    width: 100;;      /*width of side menu*/
+    width: 100%;      /*width of side menu*/
     background-color:black;
-    padding-top: 25px 40px;
+    padding: 25px 40px;
     display:flex;
     justify-content:space-between;
     align-items:center;
@@ -28,7 +28,7 @@
 /*navigation buttons*/
 .navbar a{
     display:inline-block;
-    color:#cdcdcdcd;
+    color:#cdcdcd;
     padding:12px 20px;
     text-decoration:none;    /*removes underline*/
     font-weight:500;
