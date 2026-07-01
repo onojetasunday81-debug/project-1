@@ -11,15 +11,26 @@
 
 <!--navigation bar-->
 <div class="navbar">
-    <h2>idk tech</h2>
-    <a href="#">Home</a>
-    <a href="#">Latest devices</a>
-    <a href="chipsets.html">Chipsets</a>
-    <a href="#">compare</a>
-    <a href="#">settings</a>
+    <div class="brand">
+        <h2>idk tech</h2>
+    </div>
+
+    <button class="menu-toggle" aria-controls="nav-links" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </button>
+
+    <nav class="nav-links" id="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Latest devices</a>
+        <a href="chipsets.html">Chipsets</a>
+        <a href="#">Compare</a>
+        <a href="#">Settings</a>
+    </nav>
 </div>
 
-<!--main content area(ill fill things in later)-->
+<!--main content area(ill fill things in later)--> 
 <div class="main-content">
     <h2>welcome to my not so projecty project</h2>
     <p>blank space for now gotta learn more and fill it with device specs,seacrh features and layouts</p>
@@ -27,6 +38,16 @@
 
 </div>
 
+<script>
+// mobile nav toggle
+const toggle = document.querySelector('.menu-toggle');
+const nav = document.getElementById('nav-links');
+
+toggle.addEventListener('click', () => {
+  const isOpen = nav.classList.toggle('open');
+  toggle.setAttribute('aria-expanded', isOpen);
+});
+</script>
 
 </body>
 </html>
